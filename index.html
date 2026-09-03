@@ -41,14 +41,12 @@
       <h1>I design aerospace hardware<br>and the software behind it.</h1>
       <p class="hero-sub">
         I'm Steven Kim, starting mechanical and electrical engineering at
-        Dartmouth's Thayer School (class of 2030). I simulated a hydrogen
-        rotating detonation engine in professional CFD, wrote a physics-based
-        aircraft design studio that exports print-ready CAD, and built the
-        hardware to check the designs: thermal goggles and the printer the
-        parts come off. Recently a hardware engineering intern at Pencil and a
-        composites hand at the Portland State Aerospace Society. Every project
-        here carries its own limitations and open items, written down rather
-        than hidden.
+        Dartmouth's Thayer School (class of 2030). The work below runs from
+        detonation-engine CFD to a design tool that exports print-ready CAD to
+        the hardware I built to check the designs. Recently a hardware
+        engineering intern at Pencil and a composites hand at the Portland
+        State Aerospace Society. Every project carries its own limitations and
+        open items, written down rather than hidden.
       </p>
       <p class="meta hero-meta">ITAR trained · FCC General Class · NAR Level 1 · AMA RC pilot</p>
       <div class="hero-actions">
@@ -72,9 +70,8 @@
               <source src="assets/rde-detonation.mp4" type="video/mp4">
             </video>
           </figure>
-          <div class="thumbs">
+          <div class="thumbs thumbs-2">
             <a class="frame" href="assets/rde-tecplot-poster.jpg" target="_blank" rel="noopener"><img src="assets/rde-tecplot-poster.jpg" alt="Still of the velocity field in the unwrapped annulus" width="800" height="709" loading="lazy"></a>
-            <a class="frame" href="assets/rde-fusion-geometry.jpg" target="_blank" rel="noopener"><img src="assets/rde-fusion-geometry.jpg" alt="Unwrapped combustor geometry in Fusion 360" width="1200" height="649" loading="lazy"></a>
             <a class="frame" href="assets/rde-converge-setup.jpg" target="_blank" rel="noopener"><img src="assets/rde-converge-setup.jpg" alt="Case setup and boundary flagging in CONVERGE Studio" width="1200" height="634" loading="lazy"></a>
           </div>
           <div class="card-body">
@@ -94,16 +91,15 @@
               reacting-flow case in CONVERGE CFD with detailed hydrogen
               chemistry, adaptive mesh refinement and periodic boundaries on an
               unwrapped annulus. The reference case reproduced a sustained
-              rotating detonation wave on a four-core desktop, confirmed by
-              front structure, periodic wrap-around without decay, and
-              monitor-point pressure periodicity.
+              rotating detonation wave, confirmed by front structure, periodic
+              wrap-around without decay, and monitor-point pressure periodicity.
             </p>
             <p>
               It is a demonstrated methodology and a qualitatively correct
               detonation, not a validated engine: wave speed was never compared
               against Chapman–Jouguet velocity, the cell-count cap ruled out a
-              grid-convergence study, and the figure shown is the reference
-              case rather than the custom geometry.
+              grid-convergence study, and the figures show that case rather
+              than the custom geometry.
             </p>
             <dl class="stats">
               <div><dt>Combustor bore</dt><dd>75 mm</dd></div>
@@ -125,7 +121,7 @@
           </figure>
           <div class="thumbs">
             <a class="frame" href="assets/proj-aeroforge-cfd.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-cfd.jpg" alt="RANS streamlines over the generated flying wing, surface coloured by pressure at 20 m/s" width="1400" height="823" loading="lazy"></a>
-            <a class="frame" href="assets/proj-aeroforge-cfd-conventional.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-cfd-conventional.jpg" alt="Side view of the conventional airframe in CFD with streamlines and a stagnation region at the leading edge" width="1200" height="705" loading="lazy"></a>
+            <a class="frame" href="assets/proj-aeroforge-pressure.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-pressure.jpg" alt="Surface pressure on the generated flying wing, planform view, pinned to a -160 to +80 Pa scale" width="1200" height="706" loading="lazy"></a>
             <a class="frame" href="assets/proj-aeroforge-fusion.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-fusion.jpg" alt="The flown wing's panels in Fusion 360 with hand-added joiner pegs" width="1200" height="706" loading="lazy"></a>
           </div>
           <div class="card-body">
@@ -152,8 +148,8 @@
             <p>
               Three generated airframes were run as full 3-D RANS cases on
               SimScale to check the internal physics against a solver that
-              knows nothing about it; the small figures show the flying wing and
-              the conventional layout at 20 m/s. One generated wing was printed in LW-PLA and test-flown.
+              knows nothing about it; the small figures show the flying wing's
+              streamlines and surface pressure at 20 m/s. One generated wing was printed in LW-PLA and test-flown.
             </p>
             <dl class="stats">
               <div><dt>Test suite</dt><dd>348 passed (v3.1 gate)</dd></div>
@@ -207,8 +203,8 @@
             <img src="assets/proj-rook.jpg" alt="The completed Rook 2020 MK2 CoreXY 3D printer, three-quarter side view with the background removed" width="900" height="1200" loading="lazy">
           </figure>
           <div class="thumbs thumbs-2">
-            <a class="frame" href="assets/proj-rook-front.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-front.jpg" alt="Front view of the printer" width="700" height="933" loading="lazy"></a>
-            <a class="frame" href="assets/proj-rook-back.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-back.jpg" alt="Back view showing the SKR Pico, wiring and the geared Z drive" width="700" height="933" loading="lazy"></a>
+            <a class="frame" href="assets/proj-rook-cad.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-cad.jpg" alt="Shaded render of the full printer CAD assembly, exported from the STEP model" width="880" height="649" loading="lazy"></a>
+            <a class="frame" href="assets/proj-rook-config.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-config.jpg" alt="Excerpt of printer.cfg: the X stepper and its TMC2209 sensorless-homing settings" width="1039" height="652" loading="lazy"></a>
           </div>
           <div class="card-body">
             <p class="eyebrow">04 — Hardware build</p>
@@ -306,7 +302,7 @@
             <li>CAD automation with CadQuery and OpenCASCADE: STEP and STL export, boolean verification</li>
             <li>Airfoil and stability modelling: NeuralFoil polars, strip theory, tail volume</li>
             <li>Front-end: TypeScript, Next.js, Tailwind, three.js</li>
-            <li>Test suites that build real geometry (348 cases in AeroForge)</li>
+            <li>Test suites that build and check real geometry rather than mocks</li>
           </ul>
         </div>
         <div class="skill-group reveal">

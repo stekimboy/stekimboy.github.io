@@ -26,10 +26,12 @@ page points at a public repo.
 
 | Asset | Source |
 |---|---|
-| `proj-aeroforge-studio.jpg`, `proj-aeroforge-cfd*.jpg`, `proj-aeroforge-fusion.jpg` | `stekimboy/aeroforge-studio`, `docs/media/` and `deliverables/` |
+| `proj-aeroforge-studio.jpg`, `proj-aeroforge-cfd.jpg`, `proj-aeroforge-pressure.jpg`, `proj-aeroforge-fusion.jpg` | `stekimboy/aeroforge-studio`, `docs/media/` and `deliverables/` |
 | `proj-goggles-thermal.gif`, `proj-goggles-*.jpg` | `stekimboy/pi-thermal-goggles`, `assets/` (clip, front and angle views flattened onto the card colour) |
-| `proj-rook*.jpg` | `stekimboy/rook-mk2-build`, `docs/images/` (side, front, back), flattened onto the card colour |
-| `rde-detonation.mp4`, `rde-tecplot-poster.jpg`, `rde-fusion-geometry.jpg`, `rde-converge-setup.jpg` | `stekimboy/hydrogen-rde-cfd`, `media/` |
+| `proj-rook.jpg` | `stekimboy/rook-mk2-build`, `docs/images/side-main-view.png`, flattened onto the card colour |
+| `proj-rook-cad.jpg` | Render of the CAD assembly from the rook-mk2-build release STEP (meshed with OpenCascade, shaded in three.js) |
+| `proj-rook-config.jpg` | Rendered excerpt of `klipper/printer.cfg` from rook-mk2-build |
+| `rde-detonation.mp4`, `rde-tecplot-poster.jpg`, `rde-converge-setup.jpg` | `stekimboy/hydrogen-rde-cfd`, `media/` |
 
 To refresh one, re-export from the source repo, downscale, and re-encode
 without EXIF (the photos were taken on a phone and carried GPS data before

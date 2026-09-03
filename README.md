@@ -1,7 +1,7 @@
 # stekimboy.github.io
 
 Personal portfolio of Steven Kim: aerospace, simulation and hardware projects.
-Live at https://stekimboy.github.io/.
+Live at https://stevenbkim.com/ (GitHub Pages, custom domain; https://stekimboy.github.io/ redirects there).
 
 The site is one `index.html` and one `styles.css` with self-hosted fonts and a
 single vendored script. There is no build step: open `index.html` in a browser,

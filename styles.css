@@ -176,6 +176,10 @@ h3 {
   border: 1px solid var(--line); background: var(--surface);
 }
 .card > .frame { border: 0; border-bottom: 1px solid var(--line); }
+/* title banner above the main image */
+.card-head { padding: 18px 28px 16px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.card-head .eyebrow { margin-bottom: 6px; }
+.card-head h3 { margin: 0; font-size: 1.4rem; }
 /* Uniform tile height across the grid. */
 .card .frame img, .card .frame video { aspect-ratio: 16 / 10; object-fit: cover; }
 .card .frame-light img, .card .frame-light video { object-fit: contain; }
@@ -192,7 +196,6 @@ h3 {
 .thumbs .frame img { aspect-ratio: 16 / 10; object-fit: cover; transition: opacity 160ms var(--ease); }
 .thumbs .frame:hover img { opacity: 0.85; }
 .card-body { padding: 28px; display: flex; flex-direction: column; flex: 1; }
-.card-body h3 { margin-bottom: 6px; }
 .card-body p { color: var(--muted); font-size: 0.95rem; margin-bottom: 14px; }
 .card-body .meta { margin-bottom: 16px; }
 .card-body .lede { color: var(--text); font-size: 1rem; }

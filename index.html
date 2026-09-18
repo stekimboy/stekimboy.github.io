@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Steven Kim — mechanical and electrical engineering at Dartmouth's Thayer School. Rotating detonation engine CFD, physics-based aircraft design software, and hardware that gets built and flown.">
-<meta name="theme-color" content="#111417">
-<title>Steven Kim | Aerospace, Simulation &amp; Hardware</title>
+<meta name="description" content="Steven Kim is a mechanical and electrical engineering student at Dartmouth's Thayer School: rotating detonation engine CFD, physics-based aircraft design software, and hardware that gets built and flown.">
+<meta name="theme-color" content="#F3F4F1">
+<meta name="color-scheme" content="light">
+<title>Steven Kim</title>
 
 <link rel="canonical" href="https://stevenbkim.com/">
-<meta property="og:title" content="Steven Kim — Aerospace, Simulation & Hardware">
-<meta property="og:description" content="Rotating detonation engine CFD, physics-based aircraft design software, and embedded hardware that gets built and flown.">
+<meta property="og:title" content="Steven Kim">
+<meta property="og:description" content="Mechanical and electrical engineering at Dartmouth. Rotating detonation engine CFD, physics-based aircraft design software, and embedded hardware that gets built and flown.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://stevenbkim.com/">
-<meta property="og:image" content="https://stevenbkim.com/assets/proj-aeroforge-studio.jpg">
+<meta property="og:image" content="https://stevenbkim.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="preload" href="assets/fonts/Newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48 64x64 128x128 256x256">
@@ -24,269 +26,312 @@
 <body>
 <a class="skip-link" href="#work">Skip to content</a>
 
-<header class="nav">
-  <div class="nav-inner">
+<header class="top">
+  <div class="container top-inner">
+    <a class="wordmark" href="#top">Steven Kim</a>
     <nav aria-label="Primary">
       <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <!-- Hero -->
+<main id="top">
   <section class="hero">
-    <div class="container">
-      <h1>I design aerospace hardware<br>and the software behind it.</h1>
-      <p class="hero-sub">
-        I'm Steven Kim, starting mechanical and electrical engineering at
-        Dartmouth College (class of 2030). The work below runs from rotating
-        detonation engines to software that generates optimized print-in-place
-        drones. I was recently a hardware engineering intern at Pencil and a
-        computer/electrical contractor at the Portland State Aerospace Society.
-        I've carried out dozens of personal and team projects, but below are
-        some of my most recent &amp; favorite.
-      </p>
-      <p class="meta hero-meta">ITAR trained · FCC General Class · NAR Level 1 · AMA RC pilot</p>
-      <div class="hero-actions">
-        <a class="btn" href="#work">View work</a>
-        <a class="text-link" href="mailto:Steven.B.Kim.30@dartmouth.edu">Steven.B.Kim.30@dartmouth.edu</a>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-lede">
+          Hello, I'm Steven Kim, starting mechanical and electrical engineering
+          at Dartmouth College, class of 2030. The work below runs from rotating
+          detonation engines to software that generates optimized print-in-place
+          drones. I was recently a hardware engineering intern at Pencil and a
+          computer and electrical contractor at the Portland State Aerospace
+          Society.
+        </p>
+        <p class="hero-note">
+          I've carried out dozens of personal and team projects, but below are
+          some of my most recent and favorite. ITAR trained, FCC General Class
+          licensed, NAR Level 1 certified, AMA RC pilot.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#work">See the work</a>
+          <a class="link" href="mailto:Steven.B.Kim.30@dartmouth.edu">Steven.B.Kim.30@dartmouth.edu</a>
+        </div>
       </div>
+      <img class="hero-pfp" src="assets/pfp.jpg" width="480" height="480" alt="Steven Kim">
+    </div>
+    <div class="container">
+      <figure class="plate" aria-hidden="true">
+        <img src="assets/plate-rde.jpg" alt="" width="2000" height="857">
+      </figure>
     </div>
   </section>
 
-  <!-- Work -->
   <section id="work" class="section">
     <div class="container">
-      <h2 class="reveal">Selected work</h2>
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>Four projects, 2024 to 2026</p>
+      </div>
 
-      <div class="cards">
-
-        <!-- 01 RDE -->
-        <article class="card reveal">
-          <header class="card-head">
-            <p class="eyebrow">01 — Propulsion research</p>
-            <h3>Rotating Detonation Engine CFD study</h3>
-          </header>
-          <figure class="frame frame-light">
+      <article class="project" id="rde">
+        <header class="project-head">
+          <h3>Rotating detonation engine CFD study</h3>
+          <p class="when">Senior research project, October 2025 to March 2026</p>
+        </header>
+        <div class="project-media">
+          <figure class="figure figure-pad">
             <video class="motion" autoplay muted loop playsinline preload="auto" poster="assets/rde-tecplot-poster.jpg" width="1048" height="930">
               <source src="assets/rde-detonation.mp4" type="video/mp4">
             </video>
+            <figcaption>Velocity magnitude in the unwrapped annulus of the CONVERGE reference case.</figcaption>
           </figure>
           <div class="thumbs thumbs-2">
-            <a class="frame" href="assets/rde-tecplot-poster.jpg" target="_blank" rel="noopener"><img src="assets/rde-tecplot-poster.jpg" alt="Still of the velocity field in the unwrapped annulus" width="800" height="709" loading="lazy"></a>
-            <a class="frame" href="assets/rde-converge-setup.jpg" target="_blank" rel="noopener"><img src="assets/rde-converge-setup.jpg" alt="Case setup and boundary flagging in CONVERGE Studio" width="1200" height="634" loading="lazy"></a>
+            <a href="assets/rde-tecplot-poster.jpg" target="_blank" rel="noopener"><img src="assets/rde-tecplot-poster.jpg" alt="Still of the velocity field in the unwrapped annulus" width="800" height="709" loading="lazy"></a>
+            <a href="assets/rde-converge-setup.jpg" target="_blank" rel="noopener"><img src="assets/rde-converge-setup.jpg" alt="Case setup and boundary flagging in CONVERGE Studio" width="1200" height="634" loading="lazy"></a>
           </div>
-          <div class="card-body">
-            <p class="meta">Senior research project, Oct 2025 to Mar 2026</p>
-            <p class="lede">
-              An end-to-end design study of a small-scale hydrogen rotating
-              detonation engine, carried from literature review to a working
-              reacting-flow simulation. An RDE replaces the subsonic flame of a
-              conventional combustor with a detonation wave travelling
-              continuously around an annular channel.
-            </p>
-            <p>
-              I sized the combustor against the Bykovskii and Wolanski
-              operability criteria, modelled it in Fusion 360, and built the
-              reacting-flow case in CONVERGE CFD with detailed hydrogen
-              chemistry, adaptive mesh refinement and periodic boundaries on an
-              unwrapped annulus. The reference case reproduced a sustained
-              rotating detonation wave, confirmed by front structure, periodic
-              wrap-around without decay, and monitor-point pressure periodicity.
-            </p>
-            <p>
-              It is a demonstrated methodology and a qualitatively correct
-              detonation, not a validated engine: wave speed was never compared
-              against Chapman–Jouguet velocity, the cell-count cap ruled out a
-              grid-convergence study, and the figures show that case rather
-              than the custom geometry.
-            </p>
-            <dl class="stats">
-              <div><dt>Combustor bore</dt><dd>75 mm</dd></div>
-              <div><dt>Annulus width</dt><dd>2 mm</dd></div>
-              <div><dt>Chemistry</dt><dd>SAGE, LLNL H₂</dd></div>
-              <div><dt>Solve time</dt><dd>~4 days, 4 cores</dd></div>
-            </dl>
-            <p class="tools">CONVERGE CFD, Fusion 360, Tecplot, ParaView, Python</p>
-            <a class="text-link" href="https://github.com/stekimboy/hydrogen-rde-cfd">View the repository
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 8l0 9l-9 0"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
+        <div class="project-body">
+          <p class="lede">
+            An end-to-end design study of a small-scale hydrogen rotating
+            detonation engine, carried from literature review to a working
+            reacting-flow simulation. An RDE replaces the subsonic flame of a
+            conventional combustor with a detonation wave travelling
+            continuously around an annular channel.
+          </p>
+          <p>
+            I sized the combustor against the Bykovskii and Wolanski
+            operability criteria, modelled it in Fusion 360, and built the
+            reacting-flow case in CONVERGE CFD with detailed hydrogen
+            chemistry, adaptive mesh refinement and periodic boundaries on an
+            unwrapped annulus. The reference case reproduced a sustained
+            rotating detonation wave, confirmed by front structure, periodic
+            wrap-around without decay, and monitor-point pressure periodicity.
+          </p>
+          <p>
+            It is a demonstrated methodology and a qualitatively correct
+            detonation, not a validated engine: wave speed was never compared
+            against Chapman–Jouguet velocity, the cell-count cap ruled out a
+            grid-convergence study, and the figures show that case rather
+            than the custom geometry.
+          </p>
+          <table class="data">
+            <tbody>
+              <tr><th scope="row">Combustor bore</th><td>75 mm</td></tr>
+              <tr><th scope="row">Annulus width</th><td>2 mm</td></tr>
+              <tr><th scope="row">Chemistry</th><td>SAGE solver, LLNL hydrogen mechanism</td></tr>
+              <tr><th scope="row">Solve time</th><td>About 4 days on 4 cores</td></tr>
+            </tbody>
+          </table>
+          <p class="tools">Tools: CONVERGE CFD, Fusion 360, Tecplot, ParaView, Python.</p>
+          <a class="link" href="https://github.com/stekimboy/hydrogen-rde-cfd">Repository on GitHub</a>
+        </div>
+      </article>
 
-        <!-- 02 AeroForge -->
-        <article class="card reveal">
-          <header class="card-head">
-            <p class="eyebrow">02 — Design software</p>
-            <h3>AeroForge</h3>
-          </header>
-          <figure class="frame frame-fit">
+      <article class="project" id="aeroforge">
+        <header class="project-head">
+          <h3>AeroForge</h3>
+          <p class="when">Independent project, July to August 2026</p>
+        </header>
+        <div class="project-media">
+          <figure class="figure">
             <img src="assets/proj-aeroforge-studio.jpg" alt="The AeroForge design studio: a spec sheet of solved aerodynamic values, a 3D aircraft view with centre-of-gravity and neutral-point overlays, and a gallery of five generated wing variants" width="1600" height="759" loading="lazy">
+            <figcaption>The design studio: solved spec sheet, 3D view with centre-of-gravity and neutral-point overlays, and five generated wing variants.</figcaption>
           </figure>
           <div class="thumbs">
-            <a class="frame" href="assets/proj-aeroforge-cfd.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-cfd.jpg" alt="RANS streamlines over the generated flying wing, surface coloured by pressure at 20 m/s" width="1400" height="823" loading="lazy"></a>
-            <a class="frame" href="assets/proj-aeroforge-pressure.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-pressure.jpg" alt="Surface pressure on the generated flying wing, planform view, pinned to a -160 to +80 Pa scale" width="1200" height="706" loading="lazy"></a>
-            <a class="frame" href="assets/proj-aeroforge-fusion.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-fusion.jpg" alt="The flown wing's panels in Fusion 360 with hand-added joiner pegs" width="1200" height="706" loading="lazy"></a>
+            <a href="assets/proj-aeroforge-cfd.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-cfd.jpg" alt="RANS streamlines over the generated flying wing, surface coloured by pressure at 20 m/s" width="1400" height="823" loading="lazy"></a>
+            <a href="assets/proj-aeroforge-pressure.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-pressure.jpg" alt="Surface pressure on the generated flying wing, planform view, pinned to a -160 to +80 Pa scale" width="1200" height="706" loading="lazy"></a>
+            <a href="assets/proj-aeroforge-fusion.jpg" target="_blank" rel="noopener"><img src="assets/proj-aeroforge-fusion.jpg" alt="The flown wing's panels in Fusion 360 with hand-added joiner pegs" width="1200" height="706" loading="lazy"></a>
           </div>
-          <div class="card-body">
-            <p class="meta">Independent project, Jul 2026 to Aug 2026</p>
-            <p class="lede">
-              A physics-based RC aircraft design studio that outputs print-ready
-              hardware. Give it an aircraft type, a mission, a cruise speed and
-              a size box; it solves the coupled weight–aerodynamics–stability
-              problem, returns five different aircraft, renders them in 3D, and
-              exports CAD with servo pockets, wire runs, hinges, control horns
-              and a magnet hatch already cut into the part.
-            </p>
-            <p>
-              Every number on screen is a real calculation: ISA atmosphere,
-              NeuralFoil polars at RC Reynolds numbers, a spanwise strip model
-              for the neutral point, tail-volume stability for tailed layouts.
-              The CAD is the hard part: one watertight solid for the STL, a STEP
-              assembly of named bodies, print-in-place captive-pin hinges, and
-              every boolean existence-checked because OpenCASCADE will report
-              success on an operation that did nothing.
-            </p>
-            <p>
-              Three generated airframes were run as full 3-D RANS cases on
-              SimScale to check the internal physics against a solver that
-              knows nothing about it; the small figures show the flying wing's
-              streamlines and surface pressure at 20 m/s. One generated wing was printed in LW-PLA and test-flown.
-            </p>
-            <dl class="stats">
-              <div><dt>Test suite</dt><dd>348 passed (v3.1 gate)</dd></div>
-              <div><dt>Aircraft families</dt><dd>6</dd></div>
-              <div><dt>Validation</dt><dd>3D RANS, k-ω SST</dd></div>
-              <div><dt>Best L/D in CFD</dt><dd>7.27, single AoA</dd></div>
-            </dl>
-            <p class="tools">Python 3.12, FastAPI, CadQuery / OpenCASCADE, NeuralFoil, three.js, SimScale</p>
-            <a class="text-link" href="https://github.com/stekimboy/aeroforge-studio">View the repository
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 8l0 9l-9 0"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
+        <div class="project-body">
+          <p class="lede">
+            A physics-based RC aircraft design studio that outputs print-ready
+            hardware. Give it an aircraft type, a mission, a cruise speed and
+            a size box; it solves the coupled weight–aerodynamics–stability
+            problem, returns five different aircraft, renders them in 3D, and
+            exports CAD with servo pockets, wire runs, hinges, control horns
+            and a magnet hatch already cut into the part.
+          </p>
+          <p>
+            Every number on screen is a real calculation: ISA atmosphere,
+            NeuralFoil polars at RC Reynolds numbers, a spanwise strip model
+            for the neutral point, tail-volume stability for tailed layouts.
+            The CAD is the hard part: one watertight solid for the STL, a STEP
+            assembly of named bodies, print-in-place captive-pin hinges, and
+            every boolean existence-checked because OpenCASCADE will report
+            success on an operation that did nothing.
+          </p>
+          <p>
+            Three generated airframes were run as full 3D RANS cases on
+            SimScale to check the internal physics against a solver that
+            knows nothing about it; the small figures show the flying wing's
+            streamlines and surface pressure at 20 m/s. One generated wing was
+            printed in LW-PLA and test-flown.
+          </p>
+          <table class="data">
+            <tbody>
+              <tr><th scope="row">Test suite</th><td>348 passed at the v3.1 gate</td></tr>
+              <tr><th scope="row">Aircraft families</th><td>6</td></tr>
+              <tr><th scope="row">Validation</th><td>3D RANS, k-ω SST, on SimScale</td></tr>
+              <tr><th scope="row">Best lift-to-drag in CFD</th><td>7.27 at a single angle of attack</td></tr>
+            </tbody>
+          </table>
+          <p class="tools">Tools: Python 3.12, FastAPI, CadQuery and OpenCASCADE, NeuralFoil, three.js, SimScale.</p>
+          <a class="link" href="https://github.com/stekimboy/aeroforge-studio">Repository on GitHub</a>
+        </div>
+      </article>
 
-        <article class="card reveal">
-          <header class="card-head">
-            <p class="eyebrow">03 — Embedded hardware</p>
-            <h3>TC001 Thermal Goggles</h3>
-          </header>
-          <figure class="frame">
+      <article class="project" id="goggles">
+        <header class="project-head">
+          <h3>TC001 thermal goggles</h3>
+          <p class="when">Independent project</p>
+        </header>
+        <div class="project-media">
+          <figure class="figure figure-pad figure-small">
             <img src="assets/proj-goggles-thermal.gif" alt="Two seconds of the goggles' thermal feed: a person waving at the camera in white-hot rendering" width="384" height="288" loading="lazy">
+            <figcaption>The goggles' own output: a 256 × 192 long-wave infrared stream rendered white-hot.</figcaption>
+          </figure>
+          <div class="thumbs thumbs-2 thumbs-cut">
+            <a href="assets/proj-goggles-front.jpg" target="_blank" rel="noopener"><img src="assets/proj-goggles-front-cut.png" alt="Front view of the finished headset with the Pi and TC001 mounted on the goggles" width="700" height="933" loading="lazy"></a>
+            <a href="assets/proj-goggles-angle.jpg" target="_blank" rel="noopener"><img src="assets/proj-goggles-angle-cut.png" alt="Angled view of the finished headset showing the camera, cabling and antenna" width="700" height="933" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <p class="lede">
+            Head-mounted thermal vision from a Raspberry Pi 4, a TOPDON TC001
+            USB thermal camera, and a pair of analog FPV goggles. The TC001 is
+            built to plug into a phone; I wanted it to drive a headset and
+            behave like an appliance: apply power, put it on, see heat.
+          </p>
+          <p>
+            The Pi pulls the 256 × 192 LWIR stream over V4L2 at 25 fps,
+            renders it for seeing rather than measuring with local contrast
+            enhancement and a light unsharp mask, and pushes NTSC composite
+            out of the A/V jack. It boots straight into the viewer with no
+            desktop, and the goggles' own input switch doubles as a mode
+            switch between the drone feed and thermal. Latency and battery
+            life have not been measured yet.
+          </p>
+          <table class="data">
+            <tbody>
+              <tr><th scope="row">Camera</th><td>TOPDON TC001, 256 × 192 LWIR</td></tr>
+              <tr><th scope="row">Compute</th><td>Raspberry Pi 4</td></tr>
+              <tr><th scope="row">Capture</th><td>V4L2 at 25 fps</td></tr>
+              <tr><th scope="row">Output</th><td>NTSC composite into analog FPV goggles</td></tr>
+            </tbody>
+          </table>
+          <p class="tools">Tools: Raspberry Pi 4, Python, OpenCV, V4L2, shell.</p>
+          <a class="link" href="https://github.com/stekimboy/pi-thermal-goggles">Repository on GitHub</a>
+        </div>
+      </article>
+
+      <article class="project" id="rook">
+        <header class="project-head">
+          <h3>Rook 2020 MK2 CoreXY printer</h3>
+          <p class="when">Independent project, November 2024 to May 2025</p>
+        </header>
+        <div class="project-media">
+          <figure class="figure figure-cut">
+            <img src="assets/proj-rook-cut.png" alt="The completed Rook 2020 MK2 CoreXY 3D printer, three-quarter side view" width="900" height="1200" loading="lazy">
+            <figcaption>The printer as built: 2020 extrusion frame, CoreXY belts, direct-drive extruder.</figcaption>
           </figure>
           <div class="thumbs thumbs-2">
-            <a class="frame" href="assets/proj-goggles-front.jpg" target="_blank" rel="noopener"><img src="assets/proj-goggles-front.jpg" alt="Front view of the finished headset with the Pi and TC001 mounted on the goggles" width="700" height="933" loading="lazy"></a>
-            <a class="frame" href="assets/proj-goggles-angle.jpg" target="_blank" rel="noopener"><img src="assets/proj-goggles-angle.jpg" alt="Angled view of the finished headset showing the camera, cabling and antenna" width="700" height="933" loading="lazy"></a>
+            <a href="assets/proj-rook-cad.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-cad.jpg" alt="Shaded render of the full printer CAD assembly, exported from the STEP model" width="880" height="649" loading="lazy"></a>
+            <a href="assets/proj-rook-config.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-config.jpg" alt="Excerpt of printer.cfg: the X stepper and its TMC2209 sensorless-homing settings" width="1039" height="652" loading="lazy"></a>
           </div>
-          <div class="card-body">
-            <p>
-              Head-mounted thermal vision from a Raspberry Pi 4, a TOPDON TC001
-              USB thermal camera, and a pair of analog FPV goggles. The TC001 is
-              built to plug into a phone; I wanted it to drive a headset and
-              behave like an appliance — apply power, put it on, see heat.
-            </p>
-            <p>
-              The Pi pulls the 256×192 LWIR stream over V4L2 at 25 fps, renders
-              it for seeing rather than measuring with local contrast
-              enhancement and a light unsharp mask, and pushes NTSC composite
-              out of the A/V jack. It boots straight into the viewer with no
-              desktop, and the goggles' own input switch doubles as a mode
-              switch between the drone feed and thermal. The clip is the goggles'
-              own output; the two photos are the finished headset. Latency and battery life have not been
-              measured yet.
-            </p>
-            <p class="tools">Raspberry Pi 4, Python, OpenCV, V4L2, Shell</p>
-            <a class="text-link" href="https://github.com/stekimboy/pi-thermal-goggles">Repository
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 8l0 9l-9 0"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
+        <div class="project-body">
+          <p class="lede">
+            A CoreXY 3D printer built from Rolohaun Design's open-source
+            Rook 2020 MK2 and documented so the build can be reproduced or
+            continued from another machine: the Klipper config, the CAD
+            assembly, and an attributed parts list.
+          </p>
+          <p>
+            BTT SKR Pico driving four TMC2209s over shared UART, Klipper and
+            Mainsail on a Raspberry Pi, sensorless StallGuard homing on X and
+            Y, and an HDX-Lite direct drive feeding a Bambu X1 hotend.
+            Extruder calibration and resonance tuning are still open, and the
+            repo says so.
+          </p>
+          <table class="data">
+            <tbody>
+              <tr><th scope="row">Build volume</th><td>120 × 120 × 92 mm</td></tr>
+              <tr><th scope="row">Frame</th><td>2020 aluminium extrusion</td></tr>
+              <tr><th scope="row">Control</th><td>BTT SKR Pico, four TMC2209 drivers over UART</td></tr>
+              <tr><th scope="row">Firmware</th><td>Klipper with Mainsail on a Raspberry Pi</td></tr>
+            </tbody>
+          </table>
+          <p class="tools">Tools: Klipper, Raspberry Pi, BTT SKR Pico, Fusion 360.</p>
+          <a class="link" href="https://github.com/stekimboy/rook-mk2-build">Repository on GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        <article class="card reveal">
-          <header class="card-head">
-            <p class="eyebrow">04 — Hardware build</p>
-            <h3>Rook 2020 MK2 CoreXY printer</h3>
-          </header>
-          <figure class="frame frame-fit">
-            <img src="assets/proj-rook.jpg" alt="The completed Rook 2020 MK2 CoreXY 3D printer, three-quarter side view with the background removed" width="900" height="1200" loading="lazy">
-          </figure>
-          <div class="thumbs thumbs-2">
-            <a class="frame" href="assets/proj-rook-cad.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-cad.jpg" alt="Shaded render of the full printer CAD assembly, exported from the STEP model" width="880" height="649" loading="lazy"></a>
-            <a class="frame" href="assets/proj-rook-config.jpg" target="_blank" rel="noopener"><img src="assets/proj-rook-config.jpg" alt="Excerpt of printer.cfg: the X stepper and its TMC2209 sensorless-homing settings" width="1039" height="652" loading="lazy"></a>
-          </div>
-          <div class="card-body">
-            <p class="meta">Independent project, Nov 2024 to May 2025</p>
-            <p>
-              A CoreXY 3-D printer built from Rolohaun Design's open-source
-              Rook 2020 MK2 and documented so the build can be reproduced or
-              continued from another machine: the Klipper config, the CAD
-              assembly, and an attributed parts list.
-            </p>
-            <p>
-              120 × 120 × 92 mm on a 2020 extrusion frame, BTT SKR Pico driving
-              four TMC2209s over shared UART, Klipper and Mainsail on a
-              Raspberry Pi, sensorless StallGuard homing on X and Y, and an
-              HDX-Lite direct drive feeding a Bambu X1 hotend. Extruder
-              calibration and resonance tuning are still open, and the repo
-              says so.
-            </p>
-            <p class="tools">Klipper, Raspberry Pi, BTT SKR Pico, Fusion 360</p>
-            <a class="text-link" href="https://github.com/stekimboy/rook-mk2-build">Repository
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 8l0 9l-9 0"/></svg>
-            </a>
-          </div>
-        </article>
-
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>2023 to 2026</p>
       </div>
-
-      <!-- ── Experience ────────────────────────────────────────── -->
-      <h2 class="reveal also-head">Experience</h2>
-      <div class="project-rows reveal">
-        <article class="project-row">
-          <h3>Pencil, hardware engineering intern</h3>
-          <p class="meta">Y Combinator-backed hardware compliance startup, Seattle, Aug 2026</p>
-          <p>
-            Test and PCB design. Digitally recreated RF modules, control boards
-            and custom PCBs and checked them against the regulatory
-            certification requirements the company's product verifies. Tested
-            for FCC and IEC compliance.
-          </p>
+      <div class="exp-list">
+        <article class="exp">
+          <p class="when">August 2026</p>
+          <div>
+            <h3>Hardware engineering intern, Pencil</h3>
+            <p class="org">Y Combinator-backed hardware compliance startup, Seattle</p>
+            <p>
+              Test and PCB design. Digitally recreated RF modules, control
+              boards and custom PCBs and checked them against the regulatory
+              certification requirements the company's product verifies.
+              Tested for FCC and IEC compliance.
+            </p>
+          </div>
         </article>
-        <article class="project-row">
-          <h3>Portland State Aerospace Society, structures and avionics</h3>
-          <p class="meta">Electrical and computer engineering member, Jun 2025 to Jan 2026</p>
-          <p>
-            Completed ITAR compliance training and worked on export-controlled
-            hardware in a controlled-access shop. Designed an isogrid infill
-            reinforcement for composite airframes to damp cavity acoustics.
-            Wired and documented the UniClogs EBv2 satellite communication
-            network, part of SatNOGS. The people there led to the mentorship
-            behind the RDE project.
-          </p>
+        <article class="exp">
+          <p class="when">June 2025 to January 2026</p>
+          <div>
+            <h3>Electrical and computer engineering member, Portland State Aerospace Society</h3>
+            <p class="org">Structures and avionics</p>
+            <p>
+              Completed ITAR compliance training and worked on export-controlled
+              hardware in a controlled-access shop. Designed an isogrid infill
+              reinforcement for composite airframes to damp cavity acoustics.
+              Wired and documented the UniClogs EBv2 satellite communication
+              network, part of SatNOGS. The people there led to the mentorship
+              behind the RDE project.
+            </p>
+          </div>
         </article>
-        <article class="project-row">
-          <h3>Oregon State University, materials science research intern</h3>
-          <p class="meta">Corvallis, Jul 2023</p>
-          <p>
-            Synthesized amorphous metal samples in a vacuum arc furnace,
-            controlling composition and cooling to form metallic glasses and
-            avoid crystallization. Compared microstructure against measured
-            yield strength and hardness, then evaluated the alloy against
-            conventional tool steels.
-          </p>
+        <article class="exp">
+          <p class="when">July 2023</p>
+          <div>
+            <h3>Materials science research intern, Oregon State University</h3>
+            <p class="org">Corvallis, Oregon</p>
+            <p>
+              Synthesized amorphous metal samples in a vacuum arc furnace,
+              controlling composition and cooling to form metallic glasses and
+              avoid crystallization. Compared microstructure against measured
+              yield strength and hardness, then evaluated the alloy against
+              conventional tool steels.
+            </p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section section-alt">
+  <section id="skills" class="section">
     <div class="container">
-      <h2 class="reveal">Skills</h2>
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
       <div class="skills-grid">
-        <div class="skill-group reveal">
+        <div class="skill-group">
           <h3>Simulation and propulsion</h3>
           <ul>
             <li>CONVERGE CFD: case setup, meshing, adaptive refinement, reacting flow</li>
@@ -297,7 +342,7 @@
             <li>Tecplot and ParaView post-processing</li>
           </ul>
         </div>
-        <div class="skill-group reveal">
+        <div class="skill-group">
           <h3>Software engineering</h3>
           <ul>
             <li>Python 3.12: numerical modelling, constrained optimisation, automation</li>
@@ -308,18 +353,18 @@
             <li>Test suites that build and check real geometry rather than mocks</li>
           </ul>
         </div>
-        <div class="skill-group reveal">
+        <div class="skill-group">
           <h3>Design and fabrication</h3>
           <ul>
             <li>Fusion 360 and Onshape solid and mesh modelling; STEP and STL deliverables</li>
             <li>Fiberglass hand layup, CNC milling and lathe work</li>
             <li>Design for FDM: hinges, captive pins, printed-fit clearances, LW-PLA airframes; PrusaSlicer</li>
             <li>Design for metal SLS; STL preparation and geometry repair</li>
-            <li>3-D printer building from open designs: CoreXY and Cartesian, TMC2209 drivers, sensorless homing</li>
+            <li>3D printer building from open designs: CoreXY and Cartesian, TMC2209 drivers, sensorless homing</li>
             <li>Klipper configuration, tuning and input shaping, Mainsail on Raspberry Pi</li>
           </ul>
         </div>
-        <div class="skill-group reveal">
+        <div class="skill-group">
           <h3>Electronics, embedded and test</h3>
           <ul>
             <li>PCB design in Altium Designer, KiCad and EasyEDA, through to in-house milled prototypes</li>
@@ -334,36 +379,35 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section section-contact">
+  <section id="contact" class="section contact">
     <div class="container">
-      <h2 class="reveal">Contact</h2>
-      <p class="availability"><span class="dot" aria-hidden="true"></span>Open to internships.</p>
-      <div class="contact-actions">
-        <a class="btn" href="mailto:Steven.B.Kim.30@dartmouth.edu">Email me</a>
-        <a class="text-link" href="tel:+13605048415">+1&nbsp;360&#8209;504&#8209;8415</a>
-        <a class="text-link" href="https://www.linkedin.com/in/steven-kim-4206a9391/">LinkedIn</a>
-        <a class="text-link" href="https://github.com/stekimboy">github.com/stekimboy</a>
+      <div class="contact-inner">
+        <h2 class="statement">I'm open to internships, and happy to talk about any of the work above.</h2>
+        <ul class="contact-list">
+          <li><span>Email</span><a class="link" href="mailto:Steven.B.Kim.30@dartmouth.edu">Steven.B.Kim.30@dartmouth.edu</a></li>
+          <li><span>Phone</span><a class="link" href="tel:+13605048415">+1&nbsp;360&nbsp;504&nbsp;8415</a></li>
+          <li><span>LinkedIn</span><a class="link" href="https://www.linkedin.com/in/steven-kim-4206a9391/">linkedin.com/in/steven-kim-4206a9391</a></li>
+          <li><span>GitHub</span><a class="link" href="https://github.com/stekimboy">github.com/stekimboy</a></li>
+        </ul>
       </div>
+      <figure class="plate plate-tail" aria-hidden="true">
+        <img src="assets/plate-wing.jpg" alt="" width="2000" height="857" loading="lazy">
+      </figure>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
+  <div class="container footer-inner">
     <span>&copy; 2026 Steven Kim</span>
+    <span>Set in Newsreader and Geist</span>
   </div>
 </footer>
 
-<script src="assets/lenis.min.js"></script>
 <script>
-  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // Smooth inertia scrolling, tuned subtle. Disabled under reduced motion.
-  if (!reduce && window.Lenis) {
-    var lenis = new Lenis({ autoRaf: true, anchors: true, lerp: 0.22 });
-  }
   // Looping clips play while on screen and pause off screen; under reduced
   // motion they stay on the poster frame.
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   var clips = document.querySelectorAll("video.motion");
   if (reduce) {
     clips.forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
@@ -376,17 +420,6 @@
       });
     }, { threshold: 0.25 });
     clips.forEach(function (v) { vio.observe(v); });
-  }
-  // Scroll reveal: opacity + transform, easeOutExpo.
-  if (reduce || !("IntersectionObserver" in window)) {
-    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
-    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
   }
 </script>
 </body>

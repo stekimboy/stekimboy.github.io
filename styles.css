@@ -115,13 +115,16 @@ h1, h2, h3 {
   font-family: var(--serif);
   font-size: clamp(23px, 2.5vw, 30px);
   line-height: 1.32; font-weight: 400; letter-spacing: -0.005em;
-  max-width: 56ch;
+  max-width: 56ch; hyphens: auto;
 }
 .hero-note { color: var(--ink-2); font-size: 15.5px; max-width: 62ch; margin-top: 22px; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px 28px; margin-top: 30px; }
 .hero-pfp {
-  width: clamp(240px, 26vw, 384px); height: auto; aspect-ratio: 1;
-  margin: 0 clamp(32px, 4vw, 64px);
+  width: clamp(260px, 30.5vw, 460px); height: auto; aspect-ratio: 1;
+  /* the paragraph's ragged edge and the circle's curve add optical space
+     on the left, so the left margin is a little smaller than the right
+     for the two gaps to read as equal */
+  margin: 0 clamp(40px, 4.2vw, 64px) 0 clamp(24px, 2.6vw, 40px);
   border-radius: 50%; object-fit: cover; object-position: 55% 50%;
   box-shadow: 0 0 0 6px var(--sheet), 0 0 0 7px var(--rule-strong);
 }

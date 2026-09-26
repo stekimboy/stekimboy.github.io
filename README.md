@@ -18,9 +18,9 @@ page points at a public repo.
 | `index.html` | All content. Sections: opening, work, experience, skills, contact. |
 | `styles.css` | Light "engineering report" layout: vellum ground, Newsreader headings, Geist body, figures on white sheets. |
 | `assets/fonts/` | Newsreader (Latin subset, variable) and Geist, both SIL OFL 1.1 (see `OFL.txt`). |
-| `assets/plate-rde.jpg`, `assets/plate-wing.jpg` | Decorative line-drawing plates under the opening and above the footer (illustrations, see `NOTICE`). |
+| `assets/plate-*.jpg` | One line-drawing plate per project, shown among its photographs: combustor cutaway, flying-wing three-view, headset exploded view, CoreXY belt path (illustrations, see `NOTICE`). |
 | `assets/pfp.jpg` | Profile photo in the opening. |
-| `assets/favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` | Site icon (planet mark). |
+| `assets/favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` | Site icon (SK monogram on a paper tile). |
 | `assets/proj-*`, `assets/rde-*` | One main image or clip per project plus sub-photos, downscaled to about 1400 px wide, metadata stripped. |
 
 ## Project images

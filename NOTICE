@@ -20,9 +20,12 @@ Images
   assets/rde-*: CONVERGE Studio, Fusion 360 and Tecplot screenshots and
   renders produced by Steven Kim; the software names are trademarks of their
   respective owners.
-  assets/plate-rde.jpg, assets/plate-wing.jpg: decorative engineering-drawing
-  illustrations made for this site. They are illustrations, not drawings of
-  the projects on the page.
+  assets/plate-rde.jpg, assets/plate-wing.jpg, assets/plate-goggles.jpg,
+  assets/plate-corexy.jpg: engineering-drawing illustrations made for this
+  site, one per project. They illustrate each project's subject; they are
+  not drawings of the hardware or CAD shown on the page.
+  assets/favicon.ico, assets/favicon-32.png, assets/apple-touch-icon.png:
+  monogram mark made for this site.
   assets/proj-rook-cut.png, assets/proj-goggles-*-cut.png: the project photos
   above with their backgrounds removed.
   assets/pfp.jpg: photograph of Steven Kim.

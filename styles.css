@@ -122,7 +122,7 @@ h1, h2, h3 {
 .hero-pfp {
   width: clamp(260px, 31vw, 480px); height: auto; aspect-ratio: 1;
   /* sits a little to the right of centre in its column */
-  margin: 0 clamp(28px, 2.6vw, 40px) 0 clamp(40px, 4.2vw, 64px);
+  margin: 0 clamp(16px, 1.3vw, 20px) 0 clamp(52px, 5.5vw, 84px);
   border-radius: 50%; object-fit: cover; object-position: 55% 50%;
   box-shadow: 0 0 0 6px var(--sheet), 0 0 0 7px var(--rule-strong);
 }

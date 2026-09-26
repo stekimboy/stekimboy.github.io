@@ -29,8 +29,8 @@
   --blue-deep: #182F6B;
   --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "Geist", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --container: 1120px;
-  --gutter: 32px;
+  --container: 1360px;
+  --gutter: 40px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   color-scheme: light;
 }
@@ -120,11 +120,9 @@ h1, h2, h3 {
 .hero-note { color: var(--ink-2); font-size: 15.5px; max-width: 62ch; margin-top: 22px; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px 28px; margin-top: 30px; }
 .hero-pfp {
-  width: clamp(260px, 30.5vw, 460px); height: auto; aspect-ratio: 1;
-  /* the paragraph's ragged edge and the circle's curve add optical space
-     on the left, so the left margin is a little smaller than the right
-     for the two gaps to read as equal */
-  margin: 0 clamp(40px, 4.2vw, 64px) 0 clamp(24px, 2.6vw, 40px);
+  width: clamp(260px, 31vw, 480px); height: auto; aspect-ratio: 1;
+  /* sits a little to the right of centre in its column */
+  margin: 0 clamp(28px, 2.6vw, 40px) 0 clamp(40px, 4.2vw, 64px);
   border-radius: 50%; object-fit: cover; object-position: 55% 50%;
   box-shadow: 0 0 0 6px var(--sheet), 0 0 0 7px var(--rule-strong);
 }
@@ -191,7 +189,7 @@ h1, h2, h3 {
 
 /* experience */
 .exp {
-  display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 8px 40px;
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 8px 40px;
   padding: 26px 0; border-top: 1px solid var(--rule);
 }
 .exp:last-child { border-bottom: 1px solid var(--rule); }
@@ -202,6 +200,7 @@ h1, h2, h3 {
 
 /* skills */
 .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 64px; }
+.skill-group { max-width: 62ch; }
 .skill-group h3 { font-size: 22px; margin-bottom: 10px; }
 .skill-group ul { padding-left: 1.1em; }
 .skill-group li { color: var(--ink-2); font-size: 15.5px; padding: 4px 0; }

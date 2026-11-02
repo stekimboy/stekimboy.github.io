@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Steven Kim is a mechanical and electrical engineering student at Dartmouth's Thayer School: rotating detonation engine CFD, physics-based aircraft design software, and hardware that gets built and flown.">
+<meta name="description" content="Steven Kim is a mechanical and electrical engineering student at Dartmouth's Thayer School working on drones, rocketry, satellite communications and CFD.">
 <meta name="theme-color" content="#F3F4F1">
 <meta name="color-scheme" content="light">
 <title>Steven Kim</title>
 
 <link rel="canonical" href="https://stevenbkim.com/">
 <meta property="og:title" content="Steven Kim">
-<meta property="og:description" content="Mechanical and electrical engineering at Dartmouth. Rotating detonation engine CFD, physics-based aircraft design software, and embedded hardware that gets built and flown.">
+<meta property="og:description" content="Mechanical and electrical engineering at Dartmouth. Drones, rocketry, satellite communications and CFD.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://stevenbkim.com/">
 <meta property="og:image" content="https://stevenbkim.com/assets/og.jpg">
@@ -43,15 +43,16 @@
     <div class="container hero-inner">
       <div class="hero-text">
         <p class="hero-lede">
-          Hello, I'm Steven Kim, starting mechanical and electrical engineering
-          at Dartmouth College, class of 2030. The work below runs from rotating
-          detonation engines to software that generates optimized print-in-place
-          drones.
+          Hello, I'm Steven Kim, a B.A./B.E. student in mechanical and
+          electrical engineering at Dartmouth's Thayer School, class of 2030.
+          I'm an undergraduate researcher in the Autonomous Drone Energy
+          Efficiency Lab, an electrical and computer engineering member at the
+          Portland State Aerospace Society, and on the liquid propulsion team
+          of Dartmouth's student rocket team.
         </p>
         <p class="hero-note">
-          I've carried out dozens of personal and team projects, but below are
-          some of my most recent and favorite. ITAR trained, FCC General Class
-          licensed, NAR Level 1 certified, AMA RC pilot.
+          Below are some of my recent projects. ITAR trained, FCC General Class
+          licensed (KM7BLH), NAR Level 1 certified.
         </p>
         <div class="hero-actions">
           <a class="btn" href="#work">See the work</a>
@@ -72,7 +73,7 @@
       <article class="project" id="rde">
         <header class="project-head">
           <h3>Rotating detonation engine CFD study</h3>
-          <p class="when">Senior research project, October 2025 to March 2026</p>
+          <p class="when">CFD design and simulation study, October 2025 to February 2026</p>
         </header>
         <div class="project-media">
           <figure class="figure figure-pad">
@@ -88,37 +89,29 @@
         </div>
         <div class="project-body">
           <p class="lede">
-            An end-to-end design study of a small-scale hydrogen rotating
-            detonation engine, carried from literature review to a working
-            reacting-flow simulation. An RDE replaces the subsonic flame of a
-            conventional combustor with a detonation wave travelling
-            continuously around an annular channel.
+            A CFD study of a small-scale hydrogen–air rotating detonation
+            engine. An RDE replaces the steady flame of a conventional
+            combustor with a detonation wave that travels continuously around
+            an annular channel.
           </p>
           <p>
-            I sized the combustor against the Bykovskii and Wolanski
-            operability criteria, modelled it in Fusion 360, and built the
-            reacting-flow case in CONVERGE CFD with detailed hydrogen
-            chemistry, adaptive mesh refinement and periodic boundaries on an
-            unwrapped annulus. The reference case reproduced a sustained
-            rotating detonation wave, confirmed by front structure, periodic
-            wrap-around without decay, and monitor-point pressure periodicity.
-          </p>
-          <p>
-            It is a demonstrated methodology and a qualitatively correct
-            detonation, not a validated engine: wave speed was never compared
-            against Chapman–Jouguet velocity, the cell-count cap ruled out a
-            grid-convergence study, and the figures show that case rather
-            than the custom geometry.
+            I started with a literature review covering F. A. Bykovskii,
+            P. Wolański, Purdue's solid-fuel designs and the GE–Lockheed
+            ramjet work. I then built the injector, chamber and annulus
+            geometry from published papers and modeled the engine in CONVERGE
+            CFD, where it sustained a rotating detonation wave. I analyzed the
+            pressure, temperature and species fields in Tecplot to track the
+            wave and verify that it kept propagating.
           </p>
           <table class="data">
             <tbody>
-              <tr><th scope="row">Combustor bore</th><td>75 mm</td></tr>
-              <tr><th scope="row">Annulus width</th><td>2 mm</td></tr>
-              <tr><th scope="row">Chemistry</th><td>SAGE solver, LLNL hydrogen mechanism</td></tr>
-              <tr><th scope="row">Solve time</th><td>About 4 days on 4 cores</td></tr>
+              <tr><th scope="row">Mixture</th><td>Hydrogen–air</td></tr>
+              <tr><th scope="row">Geometry</th><td>Injector, chamber and annulus from published papers</td></tr>
+              <tr><th scope="row">Solver</th><td>CONVERGE CFD</td></tr>
+              <tr><th scope="row">Post-processing</th><td>Tecplot</td></tr>
             </tbody>
           </table>
-          <p class="tools">Tools: CONVERGE CFD, Fusion 360, Tecplot, ParaView, Python.</p>
+          <p class="tools">Tools: CONVERGE CFD, Tecplot.</p>
           <a class="link" href="https://github.com/stekimboy/hydrogen-rde-cfd">Repository on GitHub</a>
         </div>
       </article>
@@ -145,38 +138,17 @@
         </div>
         <div class="project-body">
           <p class="lede">
-            A physics-based RC aircraft design studio that outputs print-ready
-            hardware. Give it an aircraft type, a mission, a cruise speed and
-            a size box; it solves the coupled weight–aerodynamics–stability
-            problem, returns five different aircraft, renders them in 3D, and
-            exports CAD with servo pockets, wire runs, hinges, control horns
-            and a magnet hatch already cut into the part.
+            A design tool for small RC aircraft. You give it an aircraft type,
+            a cruise speed and a size limit, and it suggests several wing
+            designs, shows them in 3D, and exports CAD files ready to 3D print.
           </p>
           <p>
-            Every number on screen is a real calculation: ISA atmosphere,
-            NeuralFoil polars at RC Reynolds numbers, a spanwise strip model
-            for the neutral point, tail-volume stability for tailed layouts.
-            The CAD is the hard part: one watertight solid for the STL, a STEP
-            assembly of named bodies, print-in-place captive-pin hinges, and
-            every boolean existence-checked because OpenCASCADE will report
-            success on an operation that did nothing.
+            I checked a few of the generated designs with CFD on SimScale; the
+            small figures show airflow and surface pressure over one flying
+            wing. One of the generated wings was printed in LW-PLA and
+            test-flown.
           </p>
-          <p>
-            Three generated airframes were run as full 3D RANS cases on
-            SimScale to check the internal physics against a solver that
-            knows nothing about it; the small figures show the flying wing's
-            streamlines and surface pressure at 20 m/s. One generated wing was
-            printed in LW-PLA and test-flown.
-          </p>
-          <table class="data">
-            <tbody>
-              <tr><th scope="row">Test suite</th><td>348 passed at the v3.1 gate</td></tr>
-              <tr><th scope="row">Aircraft families</th><td>6</td></tr>
-              <tr><th scope="row">Validation</th><td>3D RANS, k-ω SST, on SimScale</td></tr>
-              <tr><th scope="row">Best lift-to-drag in CFD</th><td>7.27 at a single angle of attack</td></tr>
-            </tbody>
-          </table>
-          <p class="tools">Tools: Python 3.12, FastAPI, CadQuery and OpenCASCADE, NeuralFoil, three.js, SimScale.</p>
+          <p class="tools">Tools: Python, SimScale, Fusion 360.</p>
           <a class="link" href="https://github.com/stekimboy/aeroforge-studio">Repository on GitHub</a>
         </div>
       </article>
@@ -199,29 +171,24 @@
         </div>
         <div class="project-body">
           <p class="lede">
-            Head-mounted thermal vision from a Raspberry Pi 4, a TOPDON TC001
-            USB thermal camera, and a pair of analog FPV goggles. The TC001 is
-            built to plug into a phone; I wanted it to drive a headset and
-            behave like an appliance: apply power, put it on, see heat.
+            Head-mounted thermal vision built from a Raspberry Pi 4, a TOPDON
+            TC001 thermal camera and a pair of analog FPV goggles. The TC001 is
+            made to plug into a phone; I wanted it to work as a headset you
+            just power on and wear.
           </p>
           <p>
-            The Pi pulls the 256 × 192 LWIR stream over V4L2 at 25 fps,
-            renders it for seeing rather than measuring with local contrast
-            enhancement and a light unsharp mask, and pushes NTSC composite
-            out of the A/V jack. It boots straight into the viewer with no
-            desktop, and the goggles' own input switch doubles as a mode
-            switch between the drone feed and thermal. Latency and battery
-            life have not been measured yet.
+            The Pi reads the camera's video, cleans up the image so it's easy
+            to see, and sends it to the goggles over the composite video
+            output. It boots straight into the thermal view.
           </p>
           <table class="data">
             <tbody>
-              <tr><th scope="row">Camera</th><td>TOPDON TC001, 256 × 192 LWIR</td></tr>
+              <tr><th scope="row">Camera</th><td>TOPDON TC001</td></tr>
               <tr><th scope="row">Compute</th><td>Raspberry Pi 4</td></tr>
-              <tr><th scope="row">Capture</th><td>V4L2 at 25 fps</td></tr>
-              <tr><th scope="row">Output</th><td>NTSC composite into analog FPV goggles</td></tr>
+              <tr><th scope="row">Display</th><td>Analog FPV goggles</td></tr>
             </tbody>
           </table>
-          <p class="tools">Tools: Raspberry Pi 4, Python, OpenCV, V4L2, shell.</p>
+          <p class="tools">Tools: Raspberry Pi 4, Python.</p>
           <a class="link" href="https://github.com/stekimboy/pi-thermal-goggles">Repository on GitHub</a>
         </div>
       </article>
@@ -244,27 +211,25 @@
         </div>
         <div class="project-body">
           <p class="lede">
-            A CoreXY 3D printer built from Rolohaun Design's open-source
-            Rook 2020 MK2 and documented so the build can be reproduced or
-            continued from another machine: the Klipper config, the CAD
-            assembly, and an attributed parts list.
+            A scratch-built CoreXY 3D printer based on Rolohaun Design's
+            open-source Rook 2020 MK2. I sourced the parts list and assembled
+            the motion system, taking it from bare aluminum extrusions to a
+            first print.
           </p>
           <p>
-            BTT SKR Pico driving four TMC2209s over shared UART, Klipper and
-            Mainsail on a Raspberry Pi, sensorless StallGuard homing on X and
-            Y, and an HDX-Lite direct drive feeding a Bambu X1 hotend.
-            Extruder calibration and resonance tuning are still open, and the
-            repo says so.
+            I wired in an SKR Pico control board, a Raspberry Pi, thermistors,
+            endstops and cooling. I then set up sensorless homing, tuned input
+            shaping, and set up a VPN so I could monitor prints remotely.
           </p>
           <table class="data">
             <tbody>
-              <tr><th scope="row">Build volume</th><td>120 × 120 × 92 mm</td></tr>
-              <tr><th scope="row">Frame</th><td>2020 aluminium extrusion</td></tr>
-              <tr><th scope="row">Control</th><td>BTT SKR Pico, four TMC2209 drivers over UART</td></tr>
-              <tr><th scope="row">Firmware</th><td>Klipper with Mainsail on a Raspberry Pi</td></tr>
+              <tr><th scope="row">Frame</th><td>2020 aluminum extrusion</td></tr>
+              <tr><th scope="row">Control</th><td>SKR Pico with a Raspberry Pi</td></tr>
+              <tr><th scope="row">Homing</th><td>Sensorless</td></tr>
+              <tr><th scope="row">Remote access</th><td>VPN for remote monitoring</td></tr>
             </tbody>
           </table>
-          <p class="tools">Tools: Klipper, Raspberry Pi, BTT SKR Pico, Fusion 360.</p>
+          <p class="tools">Tools: SKR Pico, Raspberry Pi, PrusaSlicer.</p>
           <a class="link" href="https://github.com/stekimboy/rook-mk2-build">Repository on GitHub</a>
         </div>
       </article>
@@ -275,21 +240,52 @@
     <div class="container">
       <div class="section-head">
         <h2>Experience</h2>
-        <p>2023 to 2026</p>
+        <p>2023 to present</p>
       </div>
       <div class="exp-list">
         <article class="exp">
-          <p class="when">June 2025 to January 2026</p>
+          <p class="when">September 2026 to present</p>
           <div>
-            <h3>Electrical and computer engineering member, Portland State Aerospace Society</h3>
-            <p class="org">Structures and avionics</p>
+            <h3>Undergraduate researcher, Autonomous Drone Energy Efficiency Lab</h3>
+            <p class="org">Dartmouth College, with Prof. Benoit Cushman-Roisin</p>
             <p>
-              Completed ITAR compliance training and worked on export-controlled
-              hardware in a controlled-access shop. Designed an isogrid infill
-              reinforcement for composite airframes to damp cavity acoustics.
-              Wired and documented the UniClogs EBv2 satellite communication
-              network, part of SatNOGS. The people there led to the mentorship
-              behind the RDE project.
+              Building a modular VTOL drone platform for energy efficiency,
+              autonomy and controls research. Configuring the PX4 autopilot for
+              vehicle control, hardware interfacing and flight testing, and
+              running calibration and ground tests so the platform can be used
+              to test future drone technologies.
+            </p>
+          </div>
+        </article>
+        <article class="exp">
+          <p class="when">June 2025 to present</p>
+          <div>
+            <h3>Electrical and computer engineering member, satellite communications and airframes</h3>
+            <p class="org">Portland State Aerospace Society and Dartmouth College</p>
+            <p>
+              Wired and documented the Portland State Aerospace Society's
+              UniClOGS EBv2 SatNOGS ground station network. Completed ITAR
+              compliance training and worked on export-controlled hardware.
+              Designed an isogrid infill reinforcement for composite airframes
+              to damp cavity acoustics. Now setting up Dartmouth Amateur
+              Radio's CubeSat ground station to track and talk to satellites
+              in low Earth orbit, and designing an eggbeater antenna for
+              VHF/UHF links and an az/el rotator for automatic pointing.
+            </p>
+          </div>
+        </article>
+        <article class="exp">
+          <p class="when">November 2023 to present</p>
+          <div>
+            <h3>Rocketry: DESERT liquid propulsion team and TARC team president</h3>
+            <p class="org">Dartmouth student rocket team and The American Rocketry Challenge</p>
+            <p>
+              Developing a static test stand for liquid rocket engines, with a
+              proposed 10 kN capacity. In high school, led my team to the
+              National Finals of The American Rocketry Challenge, top 100 of
+              more than 1,000 teams. Built and flew a custom H-class rocket for
+              my NAR Level 1 certification and designed Kalman-filtered PID
+              airbrakes.
             </p>
           </div>
         </article>
@@ -299,11 +295,10 @@
             <h3>Materials science research intern, Oregon State University</h3>
             <p class="org">Corvallis, Oregon</p>
             <p>
-              Synthesized amorphous metal samples in a vacuum arc furnace,
-              controlling composition and cooling to form metallic glasses and
-              avoid crystallization. Compared microstructure against measured
-              yield strength and hardness, then evaluated the alloy against
-              conventional tool steels.
+              Synthesized amorphous metals in a vacuum arc furnace, tuning
+              composition and cooling to avoid crystallization. Compared their
+              microstructure to measured yield strength and hardness, and
+              benchmarked them against conventional tool steels.
             </p>
           </div>
         </article>
@@ -318,47 +313,38 @@
       </div>
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>Simulation and propulsion</h3>
+          <h3>Manufacturing</h3>
           <ul>
-            <li>CONVERGE CFD: case setup, meshing, adaptive refinement, reacting flow</li>
-            <li>Detailed combustion chemistry (SAGE solver, LLNL mechanisms)</li>
-            <li>External aerodynamics: steady RANS, k-ω SST and k-epsilon, SimScale</li>
-            <li>Detonative propulsion: RDE operability and sizing criteria</li>
-            <li>Compressible flow and choked-injector design</li>
-            <li>Tecplot and ParaView post-processing</li>
+            <li>Aluminum TIG welding</li>
+            <li>Fiberglass layup</li>
+            <li>CNC milling and lathe work</li>
+            <li>FDM 3D printing</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Software engineering</h3>
+          <h3>CAD and simulation</h3>
           <ul>
-            <li>Python 3.12: numerical modelling, constrained optimisation, automation</li>
-            <li>FastAPI services with worker pools and content-addressed caching</li>
-            <li>CAD automation with CadQuery and OpenCASCADE: STEP and STL export, boolean verification</li>
-            <li>Airfoil and stability modelling: NeuralFoil polars, strip theory, tail volume</li>
-            <li>Front-end: TypeScript, Next.js, Tailwind, three.js</li>
-            <li>Test suites that build and check real geometry rather than mocks</li>
+            <li>SolidWorks</li>
+            <li>Altium Designer for PCB design</li>
+            <li>CONVERGE CFD and Tecplot</li>
+            <li>PrusaSlicer and OpenRocket</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Design and fabrication</h3>
+          <h3>Electronics and avionics</h3>
           <ul>
-            <li>Fusion 360 and Onshape solid and mesh modelling; STEP and STL deliverables</li>
-            <li>Fiberglass hand layup, CNC milling and lathe work</li>
-            <li>Design for FDM: hinges, captive pins, printed-fit clearances, LW-PLA airframes; PrusaSlicer</li>
-            <li>Design for metal SLS; STL preparation and geometry repair</li>
-            <li>3D printer building from open designs: CoreXY and Cartesian, TMC2209 drivers, sensorless homing</li>
-            <li>Klipper configuration, tuning and input shaping, Mainsail on Raspberry Pi</li>
+            <li>PX4 autopilot setup, calibration and ground testing</li>
+            <li>Raspberry Pi and SKR Pico control boards</li>
+            <li>Ground station wiring and VHF/UHF antenna design</li>
+            <li>Kalman-filtered PID control for rocket airbrakes</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Electronics, embedded and test</h3>
+          <h3>Certifications</h3>
           <ul>
-            <li>PCB design in Altium Designer, KiCad and EasyEDA, through to in-house milled prototypes</li>
-            <li>STM32 firmware in C/C++; stepper motors, servos, power stages and wiring for small builds</li>
-            <li>Embedded Linux on Raspberry Pi: V4L2 capture, OpenCV, composite video out, auto-booting appliances</li>
-            <li>Bench testing of RF modules, motor drives and closed-loop control electronics against certification requirements</li>
-            <li>Materials testing: vacuum arc melting of bulk metallic glass, compression testing</li>
-            <li>Solid rocket motors, composite airframes and ITAR-controlled shop work</li>
+            <li>FCC General Class amateur radio license (KM7BLH)</li>
+            <li>NAR Level 1 high-power rocketry</li>
+            <li>ITAR compliance training</li>
           </ul>
         </div>
       </div>
